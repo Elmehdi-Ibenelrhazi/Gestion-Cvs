@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des CVs</title>
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/stylebutton.css">
+    <style>
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- Conteneur principal -->
+        <div id="cv-container" class="cv-container single"></div>
+
+        <div class="controls">
+            <button id="first-btn">Premier</button>
+            <button id="prev-btn">Précédent</button>
+            <button id="next-btn">Suivant</button>
+            <button id="last-btn">Dernier</button>
+            <button id="toggle-btn">Afficher tous les CV</button>
+            <button id="create-btn">Créer un nouveau CV</button>
+        </div>
+
+        <!-- Ajouter le champ de saisie et le bouton de recherche -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher par nom...">
+            <input type="text" id="search-tech-input" placeholder="Rechercher par technologie...">
+            <button id="search-btn">Rechercher</button>
+        </div>
+
+        <!-- Conteneur pour le formulaire de création de CV -->
+        <div id="cv-form-container" class="hidden"></div>
+    </div> <!-- Fin du conteneur principal -->
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

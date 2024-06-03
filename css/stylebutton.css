@@ -1,0 +1,175 @@
+/* Conteneur principal */
+
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/* Styles pour les boutons */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin: 6px;
+}
+
+/* Couleurs et effets au survol pour chaque bouton */
+#toggle-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+#toggle-btn:hover {
+    background-color: #2980b9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#next-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#next-btn:hover {
+    background-color: #27ae60;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#prev-btn {
+    background-color: #f39c12;
+    color: white;
+}
+
+#prev-btn:hover {
+    background-color: #e67e22;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#first-btn {
+    background-color: #9b59b6;
+    color: white;
+}
+
+#first-btn:hover {
+    background-color: #8e44ad;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#last-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#last-btn:hover {
+    background-color: #c0392b;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour les inputs de recherche */
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-right: 6px;
+}
+
+/* Couleur et effet au survol pour les inputs de recherche */
+.search-container input[type="text"]:hover,
+.search-container input[type="text"]:focus {
+    border-color: #3498db;
+}
+
+/* Styles pour le bouton de recherche */
+.search-container button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background-color: #3498db;
+    color: white;
+    margin-top: 10px; /* Ajout d'une marge en haut */
+}
+
+/* Couleur et effet au survol pour le bouton de recherche */
+.search-container button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour le formulaire de création de CV */
+#cv-form {
+    margin-bottom: 20px; /* Ajout d'une marge en bas */
+}
+
+#cv-form label {
+    color: aliceblue;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#cv-form input[type="text"],
+#cv-form input[type="email"],
+#cv-form input[type="tel"],
+#cv-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#cv-form input[type="text"]:hover,
+#cv-form input[type="email"]:hover,
+#cv-form input[type="tel"]:hover,
+#cv-form textarea:hover,
+#cv-form input[type="text"]:focus,
+#cv-form input[type="email"]:focus,
+#cv-form input[type="tel"]:focus,
+#cv-form textarea:focus {
+    border-color: #3498db;
+}
+
+#cv-form .error-message {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#cv-form button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    background-color: #3498db;
+    color: white;
+    margin-top: 10px; /* Ajout d'une marge en haut */
+}
+
+#cv-form button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.hidden {
+    display: none;
+}
